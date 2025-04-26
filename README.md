@@ -1,8 +1,6 @@
 # VocaGrow Agent
 
-**VocaGrow Agent** is an intelligent speech coaching assistant for children, powered by **LiveKit Agents** and **Google Gemini Flash 2.0**.  
-It helps children practice pronunciation based on dynamically selected **language**, **character**, and **activity**, providing cheerful, interactive guidance.
-
+**VocaGrow Agent** is an AI-powered speech coaching assistant designed specifically for children. Built using **LiveKit Agents** and **Google Gemini Flash 2.0**, it helps children improve their pronunciation by dynamically adapting to their selected **language**, **character**, and **learning activity**. The agent offers cheerful, interactive guidance to make speech practice fun and engaging.
 
 ## ✨ Features
 
@@ -66,7 +64,7 @@ python main.py dev
 - Based on these attributes:
   - A **custom system prompt** is dynamically created (Arabic or English).
   - A **specific voice** is selected matching the character's gender:
-  
+
     | Character   | Voice    |
     |-------------|----------|
     | Woody       | Puck     |
@@ -75,14 +73,14 @@ python main.py dev
     | Elsa        | Kore     |
 
 - The agent then:
-  - The agent fully adopts the child's selected character persona.
-  - The agent pronounces a word related to the selected activity in the chosen language.
-  - The agent asks the child to repeat the word.
-  - The agent listens to the child's pronunciation attempt.
-  - The agent provides positive feedback if the pronunciation is correct.
-  - The agent gently repeats and encourages if the pronunciation needs improvement.
-  - The agent avoids unrelated questions or topics.
-  - The agent keeps interactions short, cheerful, and focused on pronunciation practice.
+  - Fully adopts the child's selected character persona.
+  - Pronounces a word related to the selected activity in the chosen language.
+  - Asks the child to repeat the word.
+  - Listens to the child's pronunciation attempt.
+  - Provides positive feedback if the pronunciation is correct.
+  - Gently repeats and encourages if the pronunciation needs improvement.
+  - Avoids unrelated questions or topics.
+  - Keeps interactions short, cheerful, and focused on pronunciation practice.
 
 
 
