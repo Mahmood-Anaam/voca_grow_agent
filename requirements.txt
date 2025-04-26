@@ -1,6 +1,6 @@
 livekit-plugins-google~=0.11
-livekit-plugins-noise-cancellation~=0.2
 python-dotenv
 livekit
 asyncio
 av
+livekit-plugins-noise-cancellation~=0.2

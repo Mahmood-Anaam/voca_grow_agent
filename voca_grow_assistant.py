@@ -8,7 +8,8 @@ from livekit.agents import (
     llm,
     multimodal,
 )
-from livekit.plugins import google, noise_cancellation
+from livekit.plugins import google
+import livekit.plugins
 from prompts import _SYSTEM_EN_PROMPT, _SYSTEM_AR_PROMPT
 
 
@@ -55,10 +56,15 @@ class VocaGrowAssistant:
         )
 
         # Start the multimodal agent
+        try:
+            noise_cancellation = livekit.plugins.noise_cancellation.BVC()
+        except:
+            noise_cancellation = None
+
         self.agent = multimodal.MultimodalAgent(
             model=self.model,
             chat_ctx=chat_ctx,
-            noise_cancellation=noise_cancellation.BVC(),
+            noise_cancellation=  noise_cancellation,
         )
         self.agent.start(ctx.room, participant)
 
